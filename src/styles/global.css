@@ -19,7 +19,7 @@ padding: 0;
 body {
 background: var(--background);
 color: var(--secondary);
-font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
 font-size: 20px;
 line-height: 1.75;
 text-rendering: optimizeLegibility;

@@ -15,6 +15,7 @@ const blog = defineCollection({
 		heroImage: z.string().optional(),
 		tags: z.array(z.string()).optional().default([]),
 		draft: z.boolean().optional().default(false),
+		// retypeset-like manual priority, higher number can be used for featured ordering.
 		pin: z.number().int().min(0).max(99).optional().default(0),
 	}),
 });

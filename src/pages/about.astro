@@ -3,11 +3,11 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE } from '../consts';
+import { SITE_TITLE, SITE_LANG } from '../consts';
 ---
 
 <!doctype html>
-<html lang="zh-Hant">
+<html lang={SITE_LANG}>
 <head>
 <BaseHead title={`${SITE_TITLE} · About`} description="About this site" />
 </head>
@@ -19,10 +19,12 @@ import { SITE_TITLE } from '../consts';
 <article class="prose article-card">
 <h1>About</h1>
 <p>
-這個網站已調整為接近 <code>astro-theme-retypeset</code> 的閱讀型版面，聚焦於排版、留白與文章清單體驗。
+This site has been reshaped to match the default reading-oriented style of
+<code>astro-theme-retypeset</code>, with focus on typography, spacing, and list-based
+post browsing.
 </p>
 <p>
-你可以從首頁閱讀最新文章，或從 Archive 查看全部內容。
+Start from the homepage for recent posts, or open Archive to browse all articles.
 </p>
 </article>
 </main>
