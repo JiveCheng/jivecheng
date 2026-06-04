@@ -1,5 +1,7 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
-export const SITE_TITLE = "Astro Blog";
-export const SITE_DESCRIPTION = "Welcome to my website!";
+export const SITE_TITLE = 'JiveCheng';
+export const SITE_DESCRIPTION = 'Revive the beauty of typography';
+export const SITE_AUTHOR = 'JiveCheng';
+export const SITE_LANG = 'en';
+export const SITE_DATE_LOCALE = 'en-US';
+// Intentionally empty by default; set this in real deployments to show the GitHub link.
+export const SITE_REPO_URL = '';

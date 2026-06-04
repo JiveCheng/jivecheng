@@ -1,0 +1,30 @@
+---
+const pathname = Astro.url.pathname;
+
+const navItems = [
+{ href: '/', label: 'Posts' },
+{ href: '/blog/', label: 'Archive' },
+{ href: '/about/', label: 'About' },
+];
+
+function isActive(href: string) {
+if (href === '/') return pathname === '/';
+if (href === '/blog/') return pathname.startsWith('/blog/');
+return pathname === href;
+}
+---
+
+<nav class="site-nav" aria-label="Site Navigation">
+<ul>
+{
+navItems.map(({ href, label }) => {
+const active = isActive(href);
+return (
+<li>
+<a class:list={{ active }} href={href}>{label}</a>
+</li>
+);
+})
+}
+</ul>
+</nav>
